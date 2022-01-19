@@ -1,0 +1,60 @@
+ALGORITHM read_sentence
+VAR
+    sentence : STRING;
+    vowels : ARRAY_OF CHAR[a,i,y,o,u,e];
+    count : INTEGER;
+    countword : INTEGER;
+    countvow : INTEGER;
+
+BEGIN
+    count:=0;
+    for (let i = 0; i < sentence.length; i++)
+    
+        count++;
+    
+    write(count)
+    
+END
+
+
+ALGORITHM word_number
+VAR
+    sentence : STRING;
+    countword : INTEGER:= 1
+
+BEGIN
+countword:= 0;
+FOR i in sentence DO
+        IF (i == " ") THEN
+            countword ++
+        END_IF
+    END_FOR
+    Write(count)
+
+
+END
+
+ALGORITHM vowels_number
+VAR
+    sentence : STRING;
+    vowels : ARRAY_OF CHAR[a,i,y,o,u,e];
+    countvow : INTEGER;
+BEGIN
+
+    FOR i in sentence DO
+        IF (sentence[i] in vowels) THEN
+            count ++ 1
+            
+        END_IF
+    END_FOR
+
+    Write(countvow)
+
+END
+
+
+
+
+
+
+
