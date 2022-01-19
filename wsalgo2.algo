@@ -1,0 +1,12 @@
+ALGORITHM distinct_elements
+VAR
+  tab1: ARRAY_OF INTEGER[N];
+  tab2: ARRAY_OF INTEGER[N];
+  sum: INTEGER :=0 ;
+    
+BEGIN
+    for (let i de tab1 =0; i<tab1.length ;i++ )
+    for( let j de tab2 =0; j<tab2.length ;j++  )
+    if tab1[i]=tab2[j]
+    sum := tab1[i]+tab2[j]
+END
